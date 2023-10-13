@@ -1,23 +1,22 @@
 <mat-drawer-container class="min-h-full">
   <mat-drawer mode="side" opened>
-    <title class="flex justify-content-center align-items-center p-4 w-12rem">
-      OH JESUS CRISTO
+    <title
+      class="flex justify-content-center align-items-center p-4 w-12rem text-3xl font-semibold">
+      Landscape
     </title>
   </mat-drawer>
   <mat-drawer-content class="">
     <header
       class="flex align-items-center justify-content-between border-bottom-1">
       <div class="flex align-items-center line-height-1 p-4">
-        <span class="text-primary text-4xl">Intinerario</span>
+        <span class="text-primary text-2xl">Intinerario</span>
       </div>
       <div class="flex align-items-center line-height-1 p-4">
         <button
-          mat-fab
-          extended
+          mat-raised-button
           color="primary"
           (click)="createActivityForm.open()">
-          <mat-icon>add</mat-icon>
-          Nueva actividad
+          <mat-icon>add</mat-icon>Nueva actividad
         </button>
       </div>
     </header>
