@@ -1,0 +1,29 @@
+<mat-card class="flex w-max">
+  <mat-card-content>
+    <div class="flex card-container blue-container overflow-hidden">
+      <div class="flex-none flex align-items-center justify-content-start">
+        <div mat-card-avatar class="example-header-image"></div>
+      </div>
+      <div
+        class="flex-grow-1 flex flex-column align-items-center justify-content-start">
+        <mat-card-title class="text-sm">{{ activity.title }}</mat-card-title>
+        <mat-card-subtitle>
+          {{ activity.startDate || '' }} - {{ activity.endDate || '' }}
+        </mat-card-subtitle>
+        <mat-chip-listbox class="w-max">
+          <mat-chip-option [style]="{ color: '#33FF8A' }" class="w-">{{
+            activity.status || ''
+          }}</mat-chip-option>
+        </mat-chip-listbox>
+      </div>
+      <div class="flex-none flex align-items-center justify-content-end">
+        <mat-card-actions align="start">
+          <div class="absolute mt-2 ml-2 top-0 right-0">
+            <mat-icon class="text-sm p-0 m-0">edit</mat-icon>
+            <mat-icon class="text-sm">delete</mat-icon>
+          </div>
+        </mat-card-actions>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
